@@ -11,8 +11,9 @@ if (!is_readable($argv[1])) {
 	exit(6);
 }
 
+define('MERCILESS_CLASSDIR', __DIR__ . '/classes');
+require('shared/includes/autoload.php');
 require('functions.php');
-require('classes/ParserToken.php');
 
 $intErrors = 0;
 $strCurrentFile = '';
